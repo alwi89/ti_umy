@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2017 at 07:39 AM
+-- Generation Time: May 16, 2017 at 04:25 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -108,6 +108,7 @@ CREATE TABLE `dosen` (
 
 INSERT INTO `dosen` (`nik`, `nama`, `jabatan`, `alamat`, `no_hp`, `email`, `username`, `password`) VALUES
 ('12345', 'M. Alwi', 'Dosen Tetap', 'jl. Yogyakarta', '0876683847', 'alwi@gmail.com', 'alwi', 'alwi'),
+('212', 'Wiro Sableng', 'Dosen', 'jl. sableng', '98766', 'wiro@gmail.com', 'wiro', 'wiro'),
 ('54321', 'Lita', 'Dosen Honor', 'jl. bantul', '0876788', 'lita@gmail.com', 'lita', 'lita');
 
 -- --------------------------------------------------------
@@ -177,7 +178,8 @@ INSERT INTO `komentar` (`id_komentar`, `nik`, `tanggal`, `id_hasil_penelitian`, 
 (2, '12345', '2017-03-30', 2, 'ok terimakasih'),
 (3, '12345', '2017-03-30', 2, 'cek tes saja'),
 (4, '54321', '2017-03-30', 3, 'bagus itu, lanjutkan pak'),
-(5, '54321', '2017-03-30', 2, 'lanjut terus dan semangat pak');
+(5, '54321', '2017-03-30', 2, 'lanjut terus dan semangat pak'),
+(6, '54321', '2017-03-30', 5, 'yes');
 
 --
 -- Indexes for dumped tables
@@ -245,12 +247,12 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `id_agenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_agenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `hasil_penelitian`
 --
@@ -265,7 +267,7 @@ ALTER TABLE `history`
 -- AUTO_INCREMENT for table `komentar`
 --
 ALTER TABLE `komentar`
-  MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- Constraints for dumped tables
 --
